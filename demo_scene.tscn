@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8lfs5chij5hy"]
+
+[ext_resource type="Script" path="res://demo_scene.gd" id="1_wohnl"]
+[ext_resource type="Texture2D" uid="uid://ryibb4i3yn7t" path="res://assets/sky.png" id="1_ydani"]
+[ext_resource type="Texture2D" uid="uid://c7hpihl2ydjoa" path="res://assets/back.png" id="2_na1o3"]
+[ext_resource type="PackedScene" uid="uid://2ncpyu7eyyjl" path="res://unit.tscn" id="2_xj11e"]
+[ext_resource type="FontFile" uid="uid://1soq07vfw2eb" path="res://assets/Xolonium-Regular.ttf" id="3_1tspu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8o7jb"]
+font = ExtResource("3_1tspu")
+font_size = 48
+
+[node name="DemoScene" type="Node2D"]
+script = ExtResource("1_wohnl")
+Unit = ExtResource("2_xj11e")
+
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(594, 368)
+scale = Vector2(4.2, 4.2)
+texture = ExtResource("1_ydani")
+
+[node name="Ground" type="Sprite2D" parent="."]
+position = Vector2(598, 277)
+scale = Vector2(4.2, 4.2)
+texture = ExtResource("2_na1o3")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
+
+[node name="Units" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 387.0
+offset_top = 11.0
+offset_right = 808.0
+offset_bottom = 69.0
+grow_horizontal = 2
+text = "Click on enemies"
+label_settings = SubResource("LabelSettings_8o7jb")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

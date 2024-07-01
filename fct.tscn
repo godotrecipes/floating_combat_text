@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4ikes1jg1k2"]
+
+[ext_resource type="FontFile" uid="uid://1soq07vfw2eb" path="res://assets/Xolonium-Regular.ttf" id="1_muolw"]
+[ext_resource type="Script" path="res://fct.gd" id="2_kfjwr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_d0iji"]
+font = ExtResource("1_muolw")
+font_size = 28
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[node name="FCT" type="Label"]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 23.0
+text = "153"
+label_settings = SubResource("LabelSettings_d0iji")
+script = ExtResource("2_kfjwr")
