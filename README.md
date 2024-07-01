@@ -1,6 +1,6 @@
 # Floating Combat Text
 
-![alt](http://kidscancode.org/godot_recipes/4.x/img/)
+![alt](http://kidscancode.org/godot_recipes/4.x/img/fct_demo.png)
 
 Tutorial:
 http://kidscancode.org/godot_recipes/4.x/ui/floating_text/
