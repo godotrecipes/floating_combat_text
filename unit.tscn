@@ -1,6 +1,6 @@
 [gd_scene load_steps=34 format=3 uid="uid://2ncpyu7eyyjl"]
 
-[ext_resource type="Script" path="res://unit.gd" id="1_45bvi"]
+[ext_resource type="Script" uid="uid://csromiu06j5qn" path="res://unit.gd" id="1_45bvi"]
 [ext_resource type="PackedScene" uid="uid://bx1x17ei8jm3m" path="res://fct_manager.tscn" id="2_j42fy"]
 [ext_resource type="Texture2D" uid="uid://cv2n34wpfp1sd" path="res://assets/explosion-animation.png" id="2_riky1"]
 [ext_resource type="Texture2D" uid="uid://vrwkwa4a071h" path="res://assets/mech-unit.png" id="2_wd0up"]
